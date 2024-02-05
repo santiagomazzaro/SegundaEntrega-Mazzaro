@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Summa Advanced</title>
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                            <a class="nav-link" href="./funcionalidades.html">Funcionalidades</a>
+                            <a class="nav-link" href="./pdv.html">Punto de Venta</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+
+    <form class="formulario">        
+          <legend class="titulo-formulario">Formulario de contacto</legend>  
+                <div class="mb-3">
+                    <label for="nombre-usuario" class="form-label">Nombre y Apellido</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email-usuario" name="email-usuario" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="tel" id="telefono-usuario" name="telefono-usuario" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label mensaje-usuario">Mensaje</label>
+                    <textarea name="mensaje-usuario" id="mensaje-usuario" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                ¡Elija por donde quiere que lo contactemos!
+
+                    <label for="">Teléfono</label>
+                    <input type="radio" id="" name="metodo-contacto" value="metodo-telefono" required>
+                    <label for="">Email</label>
+                    <input type="radio" id="" name="metodo-contacto" value="metodo-email" required>
+                </div>
+                
+                    <input type="submit" class="btn btn-primary enviar">
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

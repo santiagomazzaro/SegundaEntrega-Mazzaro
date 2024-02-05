@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para todos los body */
+
+
+body {
+    background-color: rgb(189, 180, 180);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* Estilo para todos los footer */
+
+footer {
+    background-color: rgb(74, 227, 166);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+.redes-sociales {
+    grid-column: 2/3;
+}
+
+.redes-sociales ul {
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales img {
+    width: 30px; 
+    margin-right: 5px;
+} 
+
+ul li {
+    list-style: none;
+}
+
+
+/* Página index.html */
+
+.titulo {
+    padding-top: 50px;
+    font-size: -webkit-xxx-large;
+    font-style: italic;
+    background-color: rgb(176, 176, 162);
+}
+
+.subtitulo {
+    padding-top: 30px;
+    font-size: xxx-large;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.parrafo-home {
+    margin-top: 150px;
+    font-size: x-large;
+}
+
+/* No logro hacer que cuando sea responsive la imagen me queda muy grande aún */
+.home-img {
+    width: 50%;
+}
+
+.button-home {
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+.button-home a {
+    color: #f1e9e9ef;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.button-home a:hover {
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
+
+
+/* Página quienesSomos.html */
+
+.parrafo-quienes-somos {
+    margin-top: 150px;
+    margin-left: 150px;
+    font-size: x-large;
+}
+
+.button-quienes-somos {
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+.button-quienes-somos a {
+    color: #f1e9e9ef;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.button-quienes-somos a:hover {
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
+
+
+/* Página funcionalidades.html */
+
+.parrafo-funcionalidades {
+    margin-top: 30px;
+    font-size: xx-large;
+}
+
+.button-funcionalidades {
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+.button-funcionalidades a {
+    color: #f1e9e9ef;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.button-funcionalidades a:hover {
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
+
+
+/* Página pdv.html */
+
+.parrafo-pdv {
+    margin-top: 150px;
+    margin-left: 150px;
+    font-size: xx-large;
+}
+
+.button-pdv {
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+.button-pdv a {
+    color: #f1e9e9ef;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.button-pdv a:hover {
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
+
+.img-pdv {
+    padding-top: 30px;
+}
+
+
+/* Página contacto.html  */
+
+.formulario {
+    background-color: beige;
+    text-align: left;
+    padding: 20px;    
+}
+
+.titulo-formulario {
+    font-weight: bold;
+    background-color: rgba(195, 190, 197, 0.384);
+    color: rgb(54, 12, 12);
+}
+
+.mensaje-usuario {
+    display: flex;  
+}
+
+.enviar:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
