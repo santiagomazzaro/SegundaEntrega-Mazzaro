@@ -5,9 +5,6 @@
 
 /* Estilos para todos los body */
 
-/* Add this CSS to your existing style.css file */
-
-/* Flex container for the navigation bar */
 .container-fluid {
     display: flex;
     justify-content: space-between; 
@@ -39,7 +36,6 @@
     }
 }
   
-
 body {
     background-color: rgb(189, 180, 180);
     text-align: center;
@@ -100,11 +96,6 @@ ul li {
     font-size: x-large;
 }
 
-/* No logro hacer que cuando sea responsive la imagen me queda muy grande aún */
-.home-img {
-    width: 50%;
-}
-
 .button-home {
     padding-top: 20px;
     font-size: xx-large;
@@ -151,15 +142,56 @@ ul li {
 
 /* Página funcionalidades.html */
 
-.funcionalidades {
-    display: block;
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .parrafo-funcionalidades {
+        margin-top: 10px;
+        padding: 0% 5%;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width:980px) {
+    .parrafo-funcionalidades {
+        margin-top: 30px;
+        padding: 0% 10%;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px) {
+    .parrafo-funcionalidades {
+        margin-top: 30px;
+        padding: 0% 15%;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.modulos-summaAdvanced {
+    background-color: rgb(207, 193, 193);
+    color: rgb(211, 192, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
 
 }
 
-.parrafo-funcionalidades {
-    margin-top: 30px;
-    font-size: xx-large;
-    display: flex;
+.modulo {
+    width: 160px;
+    height: 300px;
+    margin: 15px 3px 15px;
+    font-size: 1rem;
+    border: solid 3px black;
+    background-color: rgb(245, 196, 124);
+    color: rgb(6, 6, 70);     
 }
 
 .button-funcionalidades {
