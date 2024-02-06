@@ -116,11 +116,66 @@ ul li {
 
 /* Página quienesSomos.html */
 
-.parrafo-quienes-somos {
-    margin-top: 150px;
-    margin-left: 150px;
-    font-size: x-large;
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+    
+    .quienes-somos-img {
+        grid-row: 1/2;
+        margin-left: 25px;
+    }
+    
+    .parrafo-quienes-somos {
+        grid-row: 2/3;
+        margin: 50px 25px 25px;
+        font-size: large;
+    }
 }
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width:980px) {
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+    
+    .quienes-somos-img {
+        grid-row: 1/2;
+        margin-left: 50px;
+    }
+    
+    .parrafo-quienes-somos {
+        grid-row: 2/3;
+        margin: 100px 50px 50px;
+        font-size: x-large;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px) {
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: (1fr, 1fr);  
+    }
+    
+    .quienes-somos-img {
+        grid-column: 1/2;
+        margin-left: 50px;
+    }
+    
+    .parrafo-quienes-somos {
+        grid-column: 2/3;
+        margin: 150px 50px 50px;
+        font-size: x-large;
+    }
+}
+
+
 
 .button-quienes-somos {
     padding-top: 20px;
@@ -151,6 +206,15 @@ ul li {
         display: flex;
         justify-content: center;
     }
+    .modulo {
+        width: 100px;
+        height: 100px;
+        margin: 15px 3px 15px;
+        font-size: 1rem;
+        border: solid 3px black;
+        background-color: rgb(245, 196, 124);
+        color: rgb(6, 6, 70);     
+    }
 }
 
 /* Tablet */
@@ -161,6 +225,15 @@ ul li {
         font-size: x-large;
         display: flex;
         justify-content: center;
+    }
+    .modulo {
+        width: 120px;
+        height: 200px;
+        margin: 15px 3px 15px;
+        font-size: 1rem;
+        border: solid 3px black;
+        background-color: rgb(245, 196, 124);
+        color: rgb(6, 6, 70);
     }
 }
 
@@ -173,6 +246,15 @@ ul li {
         display: flex;
         justify-content: center;
     }
+    .modulo {
+        width: 160px;
+        height: 300px;
+        margin: 15px 3px 15px;
+        font-size: 1rem;
+        border: solid 3px black;
+        background-color: rgb(245, 196, 124);
+        color: rgb(6, 6, 70);     
+    }
 }
 
 .modulos-summaAdvanced {
@@ -182,16 +264,6 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;  
 
-}
-
-.modulo {
-    width: 160px;
-    height: 300px;
-    margin: 15px 3px 15px;
-    font-size: 1rem;
-    border: solid 3px black;
-    background-color: rgb(245, 196, 124);
-    color: rgb(6, 6, 70);     
 }
 
 .button-funcionalidades {
