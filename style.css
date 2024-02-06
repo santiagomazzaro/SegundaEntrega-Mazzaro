@@ -5,6 +5,40 @@
 
 /* Estilos para todos los body */
 
+/* Add this CSS to your existing style.css file */
+
+/* Flex container for the navigation bar */
+.container-fluid {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+.navbar-toggler {
+    order: -1;
+}
+  
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.navbar-nav a {
+    margin-right: 15px;
+}
+  
+@media (max-width: 980px) {
+    .navbar-nav {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .navbar-nav a {
+      margin-right: 0; 
+      margin-bottom: 10px;
+    }
+}
+  
 
 body {
     background-color: rgb(189, 180, 180);
